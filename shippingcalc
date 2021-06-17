@@ -16,11 +16,9 @@ else:
   GroundPP = 1.50 * weight + flat
 if premium == True:
   GroundPP += premiumFlat
-  print("Total ground shipping with premium service is: ")
-  print(GroundPP)
+  print("Total ground shipping with premium service is: ", GroundPP)
 if not premium:
-  print("Total ground shipping is: ")
-  print(GroundPP)
+  print("Total ground shipping is: ", GroundPP)
 
 ########### Drone shipping ##############
 
@@ -34,5 +32,4 @@ elif weight >= 2:
 else:
   DronePP = 4.50 * weight
 
-print("Total with Drone shipping service is: ")
-print(DronePP)
+print("Total with Drone shipping service is: ", DronePP)
