@@ -1,0 +1,38 @@
+# user input
+weight = 41.5
+
+########### Ground shipping ############
+flat = 20
+premiumFlat = 105
+premium = False
+
+if weight >= 10:
+  GroundPP = 4.75 * weight + flat
+elif weight >= 6:
+  GroundPP = 4.00 * weight + flat
+elif weight >= 2:
+  GroundPP = 3.00 * weight + flat
+else:
+  GroundPP = 1.50 * weight + flat
+if premium == True:
+  GroundPP += premiumFlat
+  print("Total ground shipping with premium service is: ")
+  print(GroundPP)
+if not premium:
+  print("Total ground shipping is: ")
+  print(GroundPP)
+
+########### Drone shipping ##############
+
+
+if weight >= 10:
+  DronePP = 14.25 * weight
+elif weight >= 6:
+  DronePP = 12.00 * weight
+elif weight >= 2:
+  DronePP = 9.00 * weight
+else:
+  DronePP = 4.50 * weight
+
+print("Total with Drone shipping service is: ")
+print(DronePP)
